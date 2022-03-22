@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.barra {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+  }
+
+body {
+background-color: #5280D0;
+ }
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 100px;
+    text-align: center;
+    block-size: auto;
+    color: white;
+
+
+}
+
+footer {
+    color: aliceblue;
+    background-color: black;
+    text-align: end;
+      
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Study</title>
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <div class="login">
+        <img src="./assets/login.svg" alt="">
+        <h1>Entre ou <span onclick="abrirCadastro()">crie sua conta</span></h1>
+        <form action="">
+            <input type="text" placeholder="Usuário ou email">
+            <input type="password" placeholder="Sua senha">
+            <label for=""><input type="checkbox" name="" id="">Manter conectado</label>
+            <input type="button" value="Entrar">
+        </form>
+    </div>
+
+    <div class="signup" id="signup">
+        <h1>Crie a sua conta em instantes</h1>
+        <form action="">
+            <input type="text" placeholder="Nome e Sobrenome">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Senha">
+            <input type="text" placeholder="Confirmar Senha">
+            <label for=""><input type="checkbox" name="" id="">Estou de acordo com os Termos de Uso</label>
+            <label for=""><input type="checkbox" name="" id="">Estou de acordo com a Política de Privacidade</label>
+            <input type="button" value="Criar Conta">
+        </form>
+    </div>
+
+    <script src="./scripts/login.js"></script>
+</body>
+</html>

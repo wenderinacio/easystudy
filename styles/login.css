@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body {
+    background-color: #454ade;
+}
+
+.login {
+    /* display: none; */
+    margin: 0 auto;
+    padding: 32px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.login img {
+    width: 300px;
+}
+
+.login h1 {
+    margin: 32px 0;
+    font-size: 26px;
+}
+
+.login h1 span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login form input {
+    padding: 16px;
+    border: none;
+    outline: none;
+    margin: 12px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login label {
+    text-align: left;
+}
+
+.login input[type=checkbox] {
+    margin-right: 10px;
+    box-shadow: none;
+}
+
+.login form input[type=button] {
+    background-color: #f49d37;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.login form input[type=button]:hover {
+    background-color: #ff8800;
+}
+
+.signup {
+    display: none;
+    background-color: #454ade;
+    margin: 0 auto;
+    padding: 32px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.signup h1 {
+    margin-bottom: 32px;
+    font-size: 26px;
+}
+
+.signup input {
+    margin: 16px auto;
+    display: grid;
+    width: 400px;
+    padding: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.signup label {
+    display: block;
+    text-align: left;
+}
+
+.signup input[type=checkbox] {
+    width: auto;
+    display: inline;
+    margin: 10px;
+    box-shadow: none;
+}
+
+.signup form input[type=button] {
+    background-color: #f49d37;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.signup form input[type=button]:hover {
+    background-color: #ff8800;
+}
