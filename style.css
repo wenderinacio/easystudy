@@ -1,82 +1,91 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
-.barra button{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+
+/* .barra button {
   background: none;
   cursor: pointer;
   border: none; 
   
 }
-.barra{
-   justify-content: space-between;
+.barra {
+  justify-content: space-between;
   padding: 5px;
-  background-color: 
   align-items: center;
   margin-block-end: 1px;
   border-radius: 3px;
-  
 }
 
-.barra h3{
+.barra h3 {
   margin-top: -22px;
-  font-family: raleway;
   text-align: end;
+  color: white;
+} */
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding: 5px;
+  background-color: #454adea6;
+  /* background-color: #1e2f9175; */
+  /* border-radius: 5px; */
+  color: black;
+}
+
+header h3 {
   color: white;
 }
 
+form {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 3px;
+  width: 700px;
+}
 
-
-body{
-    font-family: raleway;
-  }
-
- header{
-   display: flex;
-   align-items: center;
-   justify-content:space-around;
-   padding: 5px;
-   background-color:#454adea6;
-   //#1e2f9175
-   color: white;
-   border-radius: 5px;
-   color: black;
-
- }
- form{
-   border: 1px solid white;
-   border-radius: 3px;
-   padding: 3px;
- }
-form input, form button{
+form input, form button {
   font-size: 12px;
   border-radius: 3px;
   border: none;
   padding: 5px;
 }
-form button{
+
+form input {
+  width: 660px;
+  outline: none;
+}
+
+form button {
   cursor: pointer;
   background: none;
   color: white;
 }
 
-form button:hover{
+form button:hover {
   background-color: white;
   color: #454aDE;
 }
 
 .login {
-  background-color:   background-color:#454adea6;
+  background-color: #454adea6;
   cursor: pointer;
   background: none;
-  color: black;
+  color: white;
   border: none;
   border: 1px solid white;
   border-radius: 3px;
   padding: 5px;
   margin-left: 10px;
   margin-right: 10px;
-  
 }
+
 p{
   margin-left: 10px;
   margin-right: 10px;
