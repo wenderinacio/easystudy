@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.banner {
+background-image: url(../assets/assinar-bg.jpg);
+background-color: rgba(0, 0, 0, 0.6);
+background-position: center;
+background-size: cover;
+background-blend-mode: darken;
+}
+
+.banner h2 {
+    padding: 180px 0;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+section.beneficios {
+    padding: 40px 2%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 30px;
+}
+
+section.beneficios .container ul li {
+    margin: 10px;
+    list-style: none;
+    background-color: #ccc;
+    display: inline-block;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+section.beneficios .container ul li:hover {
+    background-color: #aaa;
+}
