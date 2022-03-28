@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body{
+    background-color:white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+
+}
+
+ .barra button {
+  background: none;
+  cursor: pointer;
+  border: none;   
+}
+
+.barra {
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+ 
+  background-color: #454aDE;
+}
+.barra a{
+    font-size: 15px
+}
+.barra h3 {
+  margin-top: -22px;
+  text-align: end;
+  color: white;
+}
+
+.barra i{
+  transform: scale(1.5);
+  }
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding: 20px;
+  background-color: #454aDE;
+  color: white;
+}
+
+header h3 {
+  color: white;
+}
+
+form {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 3px;
+  width: 700px;
+}
+
+form input, form button {
+  font-size: 12px;
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+}
+
+form input {
+  width: 660px;
+  outline: none;
+}
+
+form button {
+  cursor: pointer;
+  background: none;
+  color: white;
+}
+
+form button:hover {
+  background-color: white;
+  color: #454aDE;
+}
+
+.login {
+  background-color: #454adea6;
+  cursor: pointer;
+  background: none;
+  color: white;
+  border: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.login:hover{
+  background: #f49d37;
+  color:white ;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #454aDE;
+   
+}
+
+.menu{
+    list-style:none;
+    float:left;
+    border-radius: 3px;
+    
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    border-radius:3px  ;
+
+ }
+ .menu li a{
+     color:white; 
+     text-decoration:none; 
+     padding:5px 10px; 
+     display:block;
+     
+}
+
+ .menu li a:hover{
+ background: #f49d37;
+ color:#fff;
+
+ }
+
+ .menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#454aDE;
+    display:none;
+    border-radius: 5px;
+    
+    }
+.menu li:hover ul, .menu li.over ul{
+    display:block;}
+
+.menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+    border-radius: 3px;
+}
+    
+
+.menu li ul li:hover{
+    background-color: #f49d37;
+    color:#fff;
+}
+
+img{
+  float:left;
+  height: 1000px;
+  width: auto;
+}
+aside h1{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 30PX;
+  font-family:Raleway;
+  padding: 30PX;
+  margin-left: 600px;
+}
+aside h2{
+  text-align: justify;
+  font-size: 25PX;
+  padding: 30px;
+  margin-left: 800px;
+  margin-right: 100px;
+}
+
+footer.fixar-rodape{
+  border-top: 1px solid #454aDE;
+  background-color: #454aDE;
+  color: white;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  font-family: Raleway;
+  text-align: end;
+  padding: 5px;
+  padding-right: 20px;
+
+}
+  
+
