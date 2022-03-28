@@ -12,7 +12,7 @@ body{
 
 }
 
- .barra button {
+.barra button {
   background: none;
   cursor: pointer;
   border: none;   
@@ -20,14 +20,15 @@ body{
 
 .barra {
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px 2%;
   align-items: center;
- 
-  background-color: #454aDE;
+  background-color: #555;
 }
+
 .barra a{
-    font-size: 15px
+    font-size: 15px;
 }
+
 .barra h3 {
   margin-top: -22px;
   text-align: end;
@@ -36,42 +37,56 @@ body{
 
 .barra i{
   transform: scale(1.5);
-  }
+  color: white;
+}
 
 header {
   height: 50px;
   display: flex;
   align-items: center;
   justify-content:space-around;
-  padding: 20px;
+  padding: 40px;
   background-color: #454aDE;
   color: white;
 }
 
-header h3 {
+.home-link {
+  text-decoration: none;
   color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header i {
+  margin-right: 5px;
 }
 
 form {
   border: 1px solid white;
   border-radius: 3px;
   padding: 3px;
-  width: 700px;
+  width: 50%;
+}
+
+header form ::placeholder {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 form input, form button {
   font-size: 12px;
   border-radius: 3px;
   border: none;
-  padding: 5px;
+  padding: 8px;
 }
 
 form input {
-  width: 660px;
+  width: 90%;
   outline: none;
 }
 
 form button {
+  width: 60px;
   cursor: pointer;
   background: none;
   color: white;
@@ -83,55 +98,55 @@ form button:hover {
 }
 
 .login {
-  background-color: #454adea6;
+  background-color: #f49d37;
   cursor: pointer;
-  background: none;
-  color: white;
-  border: none;
+  height: 40px;
   border: 1px solid white;
   border-radius: 3px;
-  padding: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 15px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
+
+.login a {
+  margin-left: 5px;
+  color: white;
+  text-decoration: none;
+}
+
 .login:hover{
   background: #f49d37;
   color:white ;
 }
+
 nav{
     display: flex;
     align-items: center;
     justify-content:space-around;
     background-color: #454aDE;
-   
 }
 
 .menu{
     list-style:none;
-    float:left;
-    border-radius: 3px;
-    
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .menu li{
-    position:relative;
     float:left;
-    border-radius:3px  ;
 
  }
  .menu li a{
-     color:white; 
-     text-decoration:none; 
-     padding:5px 10px; 
-     display:block;
-     
+    color:white; 
+    text-decoration:none; 
+    padding: 10px; 
 }
 
  .menu li a:hover{
- background: #f49d37;
- color:#fff;
-
+  background: #f49d37;
+  color:#fff;
+  border-radius: 3px;
  }
 
  .menu li  ul{
@@ -152,48 +167,46 @@ nav{
     width:150px;
     border-radius: 3px;
 }
-    
 
 .menu li ul li:hover{
     background-color: #f49d37;
     color:#fff;
 }
 
-img{
+main {
+  padding: 40px 8%;
+}
+
+main img{
   float:left;
-  height: 1000px;
+  height: 600px;
   width: auto;
+  margin-right: 40px;
 }
-aside h1{
+
+main h1{
   margin-top: 100px;
-  text-align: center;
-  font-size: 30PX;
-  font-family:Raleway;
-  padding: 30PX;
-  margin-left: 600px;
-}
-aside h2{
-  text-align: justify;
-  font-size: 25PX;
+  font-size: 26px;
   padding: 30px;
-  margin-left: 800px;
-  margin-right: 100px;
+}
+
+main p{
+  font-weight: bold;
+  text-align: justify;
+  font-size: 20px;
 }
 
 footer.fixar-rodape{
-  border-top: 1px solid #454aDE;
   background-color: #454aDE;
   color: white;
   bottom: 0;
   left: 0;
-  height: 40px;
+  height: 50px;
   position: fixed;
   width: 100%;
-  font-family: Raleway;
   text-align: end;
-  padding: 5px;
+  padding: 15px;
   padding-right: 20px;
-
 }
   
 
