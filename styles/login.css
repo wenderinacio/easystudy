@@ -27,10 +27,6 @@ body {
     color: white;
 }
 
-.login img {
-    width: 400px;
-}
-
 .login h1 {
     margin: 32px 0;
     font-size: 26px;
@@ -73,6 +69,21 @@ body {
 
 .login form input[type=button]:hover {
     background-color: #ff8800;
+}
+
+.login img {
+    margin: 10px 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 36px;
+}
+
+#close-login {
+    background: none;
+    color: white;
+    box-shadow: none;
+    padding: 0;
 }
 
 .signup {
@@ -126,3 +137,13 @@ body {
 .signup form input[type=button]:hover {
     background-color: #ff8800;
 }
+
+.signup img {
+    margin: 10px 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 36px;
+}
+
+.signup a {text-decoration: none;}
