@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 body{
     background-color:white;
@@ -60,7 +60,7 @@ header i {
   margin-right: 5px;
 }
 
-form {
+header form {
   border: 1px solid white;
   border-radius: 3px;
   padding: 3px;
@@ -195,7 +195,6 @@ main h1{
 }
 
 main p{
-  font-weight: bold;
   text-align: justify;
   font-size: 20px;
 }
@@ -205,10 +204,33 @@ footer.fixar-rodape{
   color: white;
   bottom: 0;
   left: 0;
-  height: 50px;
   position: fixed;
   width: 100%;
-  text-align: end;
-  padding: 15px;
-  padding-right: 20px;
+  padding: 10px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter form {
+  display: flex;
+  margin-left: 10px;
+}
+
+.newsletter input[type=email] {
+  width: 30vw;
+  margin-right: 5px;
+}
+
+.newsletter input[type=button] {
+  background-color: #f49d37;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  width: 10vw;
 }
