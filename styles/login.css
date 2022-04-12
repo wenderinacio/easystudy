@@ -71,12 +71,22 @@ body {
     background-color: #ff8800;
 }
 
+.login a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.login a:hover {
+    color: #EEE;
+}
+
 .login img {
     margin: 10px 20px;
     background-color: white;
     border-radius: 50%;
     padding: 5px;
-    width: 36px;
+    width: 46px;
 }
 
 #close-login {
