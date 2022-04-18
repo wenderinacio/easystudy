@@ -13,7 +13,7 @@
 /*Primeira versão da página de login*/
 
 body {
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_960_720.jpg);
+    background-image: url(../assets/login-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +75,7 @@ body {
 }
 
 .login form input[type=button]:hover {
-    background-color: #ff8800;
+    background-color: tomato;
 }
 
 .login a {
@@ -176,7 +176,7 @@ hr {
 }
 
 .signup form input[type=button]:hover {
-    background-color: #ff8800;
+    background-color: tomato;
 }
 
 .signup img {
