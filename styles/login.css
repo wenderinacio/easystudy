@@ -10,12 +10,13 @@
     font-family: Raleway;
 }
 
+/*Primeira versão da página de login*/
+
 body {
     background-color: #454ade;
 }
 
 .login {
-    /* display: none; */
     margin: 0 auto;
     padding: 32px;
     text-align: center;
