@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Study</title>
+    <link rel="stylesheet" href="./styles/style_inicial.css">
+    <link rel="stylesheet" href="./styles/fale-conosco.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/2b02bea11a.js" crossorigin="anonymous"></script>        
+    <link rel="shortcut icon" href="/assets/favicon.ico"/>
+</head>
+<body>
+    <div class="barra"><a href="https://www.instagram.com/"><button><i class="fa-brands fa-instagram"></i> &emsp;</button></a>
+        <a href="https://www.facebook.com/"><button><i class="fa-brands fa-facebook"></i> &emsp;</button></a>
+        <a href="https://twitter.com/"><button><i class="fa-brands fa-twitter"></i> &emsp;</button></a>
+        <a href="https://www.youtube.com/"><button><i class="fa-brands fa-youtube"></i> &emsp;</button></a>
+        <h3 class="cursoGratuito">Cursos Gratuitos</h3>
+    </div>  
+
+    <header>
+        <a class="home-link" href="./index.html"><i class="fa-solid fa-graduation-cap"></i>EasyStudy</a> 
+        <form action="#" method="post">
+            <input type="text" name="search" placeholder="O que você procura?" required>
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <button class="login"><i class="fa-regular fa-user"></i><a href="login.html">Entre ou Cadastre-se</a></button>
+    </header>
+      
+    <nav>
+        <ul class="menu">
+            <li><a href="./index.html">Sobre nós</a></li>
+            <li><a href="#">Cursos</a>
+                <ul>
+                     <li><a href="#">CSS</a></li>
+                     <li><a href="#">HTML</a></li>
+                     <li><a href="#">JavaScript</a></li>
+                </ul>
+            </li>
+            <li><a href="./assinar.html">Assinatura de Cursos</a></li>
+            <li><a href="#">Area do Aluno</a></li>
+            <li><a href="./fale-conosco.html">Fale Conosco</a></li>
+        </ul>  
+    </nav>
+
+    <main class="contato">
+      <h1>Tem alguma dúvida, sugestão ou crítica?</h1>
+      <p>Deixe sua mensagem abaixo:</p>
+
+      <form id="form-contato" action="">
+        <label for="contato-nome">Nome:</label><input id="contato-nome" type="text">
+        <label for="contato-email">E-mail:</label><input type="email" name="" id="contato-email">
+        <label for="contato-mensagem">Mensagem:</label><textarea name="" id="contato-mensagem"></textarea>
+        <input type="button" value="Enviar mensagem">
+      </form>
+    </main>
+
+    <footer class="fixar-rodape">
+        <div class="newsletter">
+            <span>Fique por dentro das nossas novidades:</span>
+            <form action="">
+                <input type="email" id="email" placeholder="Qual seu melhor e-mail?">
+                <input type="button" value="Cadastrar">
+            </form>
+        </div> 
+        <p> Dê o primeiro passo para sua carreira de sucesso aqui </p>
+    </footer>
+</body>
+</html>
