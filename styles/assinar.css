@@ -80,6 +80,7 @@ section.planos .container {
 .card-plano:nth-child(2) {
     background-color: #454aDE;
     color: white;
+    transform: scale(105%);
 }
 
 .card-plano:nth-child(2) button {
@@ -123,4 +124,21 @@ section.planos .container {
     line-height: 30px;
     list-style-type: "\2705";
 
+}
+
+@media all and (max-width: 1200px) {
+    section.planos .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.planos .container .card-plano {
+        width: 60%;
+        margin: 30px 0;
+    }
+
+    section.planos .container .card-plano ul {
+        text-align: justify;
+        list-style-position: inside;
+    }
 }
