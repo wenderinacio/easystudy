@@ -3,4 +3,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: auto;
+    margin: 20px auto;
+    border-radius: 5px;
 }
