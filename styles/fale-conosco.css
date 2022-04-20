@@ -1,12 +1,15 @@
 main.contato {
-  height: 100vh;
+  height: 70vh;
   background-color: whitesmoke;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 main.contato h1 {
-  /* text-align: center; */
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -53,4 +56,19 @@ main.contato input[type=button] {
 main.contato input[type=button]:hover {
   cursor: pointer;
   background-color: tomato;
+}
+
+main.contato i {
+  font-size: 200px;
+  color: #333;
+}
+
+@media all and (max-width: 1100px) {
+  main.contato form {
+    max-width: 80vw;
+  }
+
+  main.contato i {
+    display: none;
+  }
 }
