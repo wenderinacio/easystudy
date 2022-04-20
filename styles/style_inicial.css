@@ -10,230 +10,81 @@ body{
   font-family: Raleway;
 
 }
-
 .barra button {
-  background: none;
-  cursor: pointer;
-  border: none;   
-}
+    background: none;
+    cursor: pointer;
+    border: none;   
+  }
+  
+  .barra {
+    justify-content: space-between;
+    padding: 15px 2%;
+    align-items: center;
+    background-color: #555;
+  }
+  
+  .barra a{
+      font-size: 15px;
+  }
+  
+  .barra h3 {
+    margin-top: -22px;
+    text-align: end;
+    color: white;
+    font-style: normal;
+    
+  }
+  
 
-.barra {
-  justify-content: space-between;
-  padding: 15px 2%;
-  align-items: center;
-  background-color: #555;
-}
+  .barra i{
+    transform: scale(1.5);
+    color: white;
+  }
+  
+  .col-md-3{
+      margin-right: 30px;
+  }
+  
+  .home-link fa-solid {
+      text-align: left;
+      justify-content: left;
+  }
 
-.barra a{
-    font-size: 15px;
-}
-
-.barra h3 {
-  margin-top: -22px;
-  text-align: end;
-  color: white;
-}
-
-.barra i{
-  transform: scale(1.5);
-  color: white;
-}
-
-header {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content:space-around;
-  padding: 40px;
-  background-color: #454aDE;
-  color: white;
-}
-
-.home-link {
-  text-decoration: none;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-header i {
-  margin-right: 5px;
-}
-
-header form {
-  border: 1px solid white;
-  border-radius: 3px;
-  padding: 3px;
-  width: 50%;
-}
-
-header form ::placeholder {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-form input, form button {
-  font-size: 12px;
-  border-radius: 3px;
-  border: none;
-  padding: 8px;
-}
-
-form input {
-  width: 90%;
-  outline: none;
-}
-
-form button {
-  width: 60px;
-  cursor: pointer;
-  background: none;
-  color: white;
-}
-
-form button:hover {
-  background-color: white;
-  color: #454aDE;
-}
-
-.login {
-  background-color: #f49d37;
-  cursor: pointer;
-  height: 40px;
-  border: 1px solid white;
-  border-radius: 3px;
-  padding: 5px 15px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-}
-
-.login a {
-  margin-left: 5px;
-  color: white;
-  text-decoration: none;
-}
-
-.login:hover{
-  background: tomato;
-  /* color:white ; */
-}
-
-nav{
+  main {
+    padding: 40px 8%;
+  }
+  
+  main img{
+    float:left;
+    height: 600px;
+    width: auto;
+    margin-right: 40px;
+  }
+  
+  main h1{
+    margin-top: 100px;
+    font-size: 26px;
+    padding: 30px;
+  }
+  
+  main p{
+    text-align: justify;
+    font-size: 20px;
+  }
+  footer.fixar-rodape{
+    background-color: #454aDE;
+    color: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .newsletter {
     display: flex;
     align-items: center;
-    justify-content:space-around;
-    background-color: #454aDE;
-}
-
-.menu{
-    list-style:none;
-    padding-bottom: 20px;
-    float:left;
-}
-
-.menu li{
-    position:relative;
-    float:left;
-    padding: 10px;
-}
- .menu li a{
-    color:white; 
-    text-decoration:none; 
-    padding: 10px;
-}
-
- .menu li:hover{
-  background: #f49d37;
-  color:#fff;
-  border-radius: 3px;
-}
-
- .menu li  ul{
-    position:absolute;
-    top:40px;
-    left:0;
-    background-color:#454aDE;
-    display:none;
-    border-radius: 5px;
-    padding: 5px;
-}
-.menu li:hover ul, .menu li.over ul{
-    display:block;
-}
-
-.menu li ul li{
-    display:block;
-    width:150px;
-    border-radius: 3px;
-    padding: 5px;
-}
-
-.menu li ul li:hover{
-    background-color: #f49d37;
-    color:#fff;
-    cursor: pointer;
-}
-
-main {
-  padding: 40px 8%;
-}
-
-main img{
-  float:left;
-  height: 600px;
-  width: auto;
-  margin-right: 40px;
-}
-
-main h1{
-  margin-top: 100px;
-  font-size: 26px;
-  padding: 30px;
-}
-
-main p{
-  text-align: justify;
-  font-size: 20px;
-}
-
-footer.fixar-rodape{
-  background-color: #454aDE;
-  color: white;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  padding: 10px; 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.newsletter {
-  display: flex;
-  align-items: center;
-}
-
-.newsletter form {
-  display: flex;
-  margin-left: 10px;
-}
-
-.newsletter input[type=email] {
-  width: 30vw;
-  margin-right: 5px;
-}
-
-.newsletter input[type=button] {
-  background-color: #f49d37;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  width: 10vw;
-}
-
-.newsletter input[type=button]:hover {
-  cursor: pointer;
-  background-color: tomato;
-}
+  }
