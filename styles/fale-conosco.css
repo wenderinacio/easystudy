@@ -1,5 +1,5 @@
 main.contato {
-  height: 70vh;
+  /* height: 70vh; */
   background-color: whitesmoke;
   /* text-align: center; */
   display: flex;
@@ -14,7 +14,7 @@ main.contato h1 {
 }
 
 main.contato p {
-  /* text-align: center; */
+  text-align: center;
   margin-bottom: 20px;
   font-size: 20px;
 }
@@ -35,10 +35,13 @@ main.contato input {
   margin-bottom: 10px;
   border: 1px solid #AAA;
   border-radius: 5px;
+  height: 40px;
+  width: 30vw;
 }
 
 main.contato form textarea {
-  width: 360px;
+  width: 30vw;
+  height: 100px;
   resize: vertical;
   border: 1px solid #AAA;
   border-radius: 5px;
@@ -46,26 +49,31 @@ main.contato form textarea {
 }
 
 main.contato input[type=button] {
-  background-color: #f49d37;
+  background-color: #0d6efd;
   color: white;
   font-weight: bold;
   font-size: 16px;
-  width: 360px;
+  width: 30vw;
 }
 
 main.contato input[type=button]:hover {
   cursor: pointer;
-  background-color: tomato;
+  background-color: #333;
 }
 
 main.contato i {
-  font-size: 200px;
-  color: #333;
+  font-size: 150px;
+  color: #0d6efd;
 }
 
 @media all and (max-width: 1100px) {
+  main.contato h1 {
+    text-align: center;
+  }
+
   main.contato form {
-    max-width: 80vw;
+    width: 100vw;
+    align-items: center;
   }
 
   main.contato i {

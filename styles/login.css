@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
 }
 
@@ -55,7 +55,7 @@ body {
     outline: none;
     margin-bottom: 12px;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .login label {
@@ -68,14 +68,15 @@ body {
 }
 
 .login form input[type=button] {
-    background-color: #f49d37;
+    background-color: #0d6efd;
     cursor: pointer;
     font-size: 16px;
     color: white;
 }
 
 .login form input[type=button]:hover {
-    background-color: tomato;
+    background-color: rgba(13, 110, 253, 0.9);
+    transform: scale(105%);
 }
 
 .login a {
@@ -109,6 +110,10 @@ body {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
+.smedia-login a:hover {
+    transform: scale(105%);
+}
+
 hr {
     margin: 20px 0;
 }
@@ -123,12 +128,13 @@ hr {
 .signup {
     display: none;
     /* background-color: #454ade; */
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_960_720.jpg);
+    background-image: url(../assets/login-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* width: 100vw; */
+    background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
     margin: 0 auto;
     padding: 64px;
@@ -169,14 +175,15 @@ hr {
 }
 
 .signup form input[type=button] {
-    background-color: #f49d37;
+    background-color: #0d6efd;
     cursor: pointer;
     font-size: 16px;
     color: white;
 }
 
 .signup form input[type=button]:hover {
-    background-color: tomato;
+    background-color: rgba(13, 110, 253, 0.9);
+    transform: scale(102%);
 }
 
 .signup img {
