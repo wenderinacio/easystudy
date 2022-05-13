@@ -5,7 +5,7 @@ function abrirCadastro() {
 function logar(){
     const btnLogar = document.getElementById('btnLogar')
     btnLogar.addEventListener('click', ()=>{
-        window.location.href = '../areaDoAluno.html'
+        window.location.href = '../pages/areaDoAluno.html'
     })
 }
 
