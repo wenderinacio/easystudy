@@ -6,10 +6,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     require: true
   },
-  lastName: {
-    type: String,
-    require: true
-  },
   email: {
     type: String,
     require: true
@@ -24,4 +20,4 @@ const userSchema = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model('note', userSchema)
+module.exports = mongoose.model('user', userSchema)

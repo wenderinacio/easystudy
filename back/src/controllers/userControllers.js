@@ -1,14 +1,30 @@
 const UserSchema = require('../models/userSchema')
-const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+const SECRET = process.env.SECRET
 
 const getAll = async (req, res) => {
+  const authHeader = req.header('authorization')
+  const token = authHeader.split(' ')[1]
+
+  if(!token) {
+    return res.status(401).send('Erro no header da requisição.')
+  }
+
+  jwt.verify(token, SECRET, (error) => {
+    if(error) {
+      return res.status(401).send({
+        message: 'Usuário não autorizado.'
+      })
+    }
+  })
+
   try {
     const users = await UserSchema.find()
     res.status(200).send(users)
-  } catch(e) {
+  } catch(error) {
     res.status(500).send({
-      'message': e
+      'message': error
     })
   }
 }
@@ -18,6 +34,13 @@ const createUser = async (req, res) => {
   req.body.password = hashedPassword
 
   try {
+    const verifyEmail = await UserSchema.findOne({email: req.body.email})
+    if(verifyEmail) {
+      return res.status(400).send({
+        message: 'Email em uso por outra conta.'
+      })
+    }
+
     const newUser = new UserSchema(req.body)
     const savedUser = await newUser.save()
 
@@ -25,9 +48,9 @@ const createUser = async (req, res) => {
       message: 'Usuário criado!',
       savedUser
     })
-  } catch(e) {
+  } catch(error) {
     res.status(500).json({
-      message: e.message
+      message: error.message
     })
   }
 }
@@ -48,9 +71,9 @@ const updateUserById = async (req, res) => {
       message: 'Usuário atualizado!',
       savedUser
     })
-  } catch(e) {
+  } catch(error) {
     res.status(400).json({
-      message: e.message
+      message: error.message
     })
   }
 }
@@ -62,9 +85,9 @@ const deleteUserById = async (req, res) => {
     res.status(200).json({
       message: `Usuário ${req.params.id} deletado!`
     })
-  } catch(e) {
+  } catch(error) {
     res.status(400).json({
-      message: e.message
+      message: error.message
     })
   }
 }
