@@ -8,8 +8,7 @@ const login = (req, res) => {
     UserSchema.findOne({email: req.body.email}, (error, user) => {
       if(!user) {
         return res.status(401).send({
-          message: 'Usuário não encontrado',
-          email: `${req.body.email}`
+          message: 'Email ou senha incorretos.'
         })
       }
 
